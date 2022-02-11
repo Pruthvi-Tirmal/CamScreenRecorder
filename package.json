@@ -1,0 +1,80 @@
+{
+  "name": "cam-screen-recorder",
+  "productName": "Cam Screen Recorder",
+  "version": "1.0.0",
+  "description": "This is a desktop screen recorder",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "build": {
+    "appId": "cam-screen-recorder",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./src/assets/images/brandIcon.ico"
+    },
+    "nsis": {
+      "installerIcon": "./src/assets/images/brandIcon.ico",
+      "uninstallerIcon": "./src/assets/images/brandIcon.ico",
+      "uninstallDisplayName": "Cam Screen Recorder",
+      "license": "./license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": {
+    "name": "Pruthvi Tirmal",
+    "email": "princetirmal81@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "./src/assets/images/brandIcon.ico"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "cam-screen-recorder"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin",
+            "linux"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "electron": "16.0.7",
+    "electron-builder": "^22.14.5"
+  }
+}

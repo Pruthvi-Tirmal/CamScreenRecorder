@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>CamScreenRecorder | The Best Screen Recorder</title>
+  </head>
+  <body>
+    <div
+      class="container d-flex header mt-3 align-items-center justify-content-center mb-4"
+    >
+      <img
+        src="./assets/images/brandIcon.png"
+        alt="brandIcon"
+        class="img-fluid img__brand"
+      />
+      <h2 class="header__brand">Cam - Screen Recorder</h2>
+    </div>
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <div class="container video__layer">
+        <video src="" class="onLoad__video"></video>
+        <div class="container onLoad__msg">
+          <div
+            class="container onLoad__msg--height d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1 class="mt-5 display-1">¯\_(ツ)_/¯</h1>
+            <div class="container align__container">
+              <h3>Instructions:</h3>
+              <h3 class="text-left">1. First Select Source Option</h3>
+              <h3 class="text-left">2. Click Play To Start Recording</h3>
+              <h3 class="text-left">3. To Save Click Stop Button</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="videoSelectBtn" class="btn__select">
+        Choose A Capture Source
+      </button>
+      <audio src="./assets/sounds/play_sound.wav" id="play_sound"></audio>
+      <audio src="./assets/sounds/stop_sound.wav" id="stop_sound"></audio>
+      <audio src="./assets/sounds/reload_sound.wav" id="reload_sound"></audio>
+      <div class="container d-flex flex-wrap justify-content-center mt-3">
+        <button
+          id="startBtn"
+          class="btn d-flex justify-content-center align-items-center"
+          title="play"
+        >
+          <i id="toggle__icon" class="fas fa-play"></i>
+        </button>
+        <button
+          id="stopBtn"
+          title="stop"
+          class="btn d-flex justify-content-center align-items-center"
+        >
+          <i class="fas fa-stop"></i>
+        </button>
+
+        <button
+          id="reloadBtn"
+          title="reload"
+          class="btn d-flex justify-content-center align-items-center"
+        >
+          <i class="fas fa-redo"></i>
+        </button>
+      </div>
+    </div>
+    <footer class="mt-5">
+      <h3 class="text-center">Design and Developed By Phoenix</h3>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="./render.js"></script>
+  </body>
+</html>
