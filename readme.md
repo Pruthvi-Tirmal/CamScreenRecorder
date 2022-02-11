@@ -1,6 +1,7 @@
 <div align="center">
-<img height="70" src="https://i.postimg.cc/02HJ1NwF/brand-Icon.png"/><h1>CamScreenRecorder</h1></div>
-<hr/>
+<img height="70" src="https://i.postimg.cc/02HJ1NwF/brand-Icon.png"/> 
+  <h1>CamScreenRecorder</h1>
+</div>
 
 ## Brief Description
 
@@ -54,10 +55,10 @@ Start the Electron
 ```
 
 ## Download For Windows
-<a style="text-decoration:none" href="https://urqr.herokuapp.com/YU2yxsNJal">
-<button style="cursor:pointer;display:flex;justify-content:center;align-items:center;border-radius:5px;outline:none;border:none;background-color:#fff">
+<a  href="https://urqr.herokuapp.com/YU2yxsNJal">
+<button>
 <img src="https://i.postimg.cc/fy9sJZCz/windows.png" height="50"/> 
-<h3 style="margin-left:10px;color:#242B2E;font-weight:700">Download For Windows</h3>
+ <span>&nbsp;&nbsp;Download For Windows</span>
 </button>
 </a>
 
