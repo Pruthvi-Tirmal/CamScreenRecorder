@@ -3,6 +3,8 @@
   <h1>CamScreenRecorder</h1>
 </div>
 
+[![OS - Windows](https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white)](https://urqr.herokuapp.com/YU2yxsNJal)
+
 ## Brief Description
 
 Developed Cross platform Desktop Screen Recorder using electron.js and Bootstrap for UI. It uses 
