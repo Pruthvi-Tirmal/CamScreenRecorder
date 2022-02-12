@@ -5,7 +5,7 @@
 
 ## Brief Description
 
-Developed Desktop Screen Recorder using electron.js and Bootstrap for UI. It uses 
+Developed Cross platform Desktop Screen Recorder using electron.js and Bootstrap for UI. It uses 
 native api for capturing the screen with various option available.  
 
 ## Features
